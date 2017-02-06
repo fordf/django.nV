@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'taskManager'
+    'taskManager',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -98,7 +98,7 @@ TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 LOGIN_URL = '/taskManager/login/'
 
 # A6: Sensitive Data Exposure
-PASSWORD_HASHERS = ['django.contrib.auth.hashers.MD5PasswordHasher']
+PASSWORD_HASHERS = ['django.contrib.auth.hashers.BCryptPasswordHasher']
 
 # A2: Broken Auth and Session Management
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
